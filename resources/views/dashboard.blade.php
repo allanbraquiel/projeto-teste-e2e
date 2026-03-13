@@ -14,7 +14,7 @@
 <div class="card-body text-center">
 
 <h5 class="card-title">👤 Pessoas</h5>
-<p class="card-text">Gerenciar cadastro de pessoas</p>
+<p class="card-text">Gerenciar Cadastro de Pessoas</p>
 
 <a href="/pessoas" class="btn btn-primary">
 Acessar
@@ -31,7 +31,7 @@ Acessar
 <div class="card-body text-center">
 
 <h5 class="card-title">📦 Produtos</h5>
-<p class="card-text">Gerenciar cadastro de produtos</p>
+<p class="card-text">Gerenciar Cadastro de Produtos</p>
 
 <a href="/produtos" class="btn btn-success">
 Acessar
