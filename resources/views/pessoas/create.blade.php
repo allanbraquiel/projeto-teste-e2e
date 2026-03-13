@@ -1,29 +1,68 @@
 <x-app-layout>
 
 <x-slot name="header">
-<h2>Cadastro de Pessoa</h2>
+<h2 class="h4">Cadastro de Pessoa</h2>
 </x-slot>
 
-<div style="padding:20px">
+<div class="container mt-4">
+
+<div class="card shadow">
+
+<div class="card-header">
+Nova Pessoa
+</div>
+
+<div class="card-body">
 
 <form method="POST" action="{{ route('pessoas.store') }}">
+
 @csrf
 
-<label>Nome</label><br>
-<input type="text" name="nome"><br><br>
+<div class="row">
 
-<label>CPF</label><br>
-<input type="text" name="cpf"><br><br>
+<div class="col-md-6 mb-3">
+<label class="form-label">Nome</label>
+<input type="text" name="nome" class="form-control" required>
+</div>
 
-<label>Email</label><br>
-<input type="email" name="email"><br><br>
+<div class="col-md-6 mb-3">
+<label class="form-label">CPF</label>
+<input type="text" name="cpf" class="form-control" required>
+</div>
 
-<label>Telefone</label><br>
-<input type="text" name="telefone"><br><br>
+</div>
 
-<button type="submit">Salvar</button>
+<div class="row">
+
+<div class="col-md-6 mb-3">
+<label class="form-label">Email</label>
+<input type="email" name="email" class="form-control">
+</div>
+
+<div class="col-md-6 mb-3">
+<label class="form-label">Telefone</label>
+<input type="text" name="telefone" class="form-control">
+</div>
+
+</div>
+
+<div class="mt-3">
+
+<button type="submit" class="btn btn-success">
+💾 Salvar
+</button>
+
+<a href="/pessoas" class="btn btn-secondary">
+↩ Voltar
+</a>
+
+</div>
 
 </form>
+
+</div>
+
+</div>
 
 </div>
 

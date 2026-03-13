@@ -1,20 +1,48 @@
 <x-app-layout>
 
 <x-slot name="header">
-<h2>Dashboard</h2>
+<h2 class="h4">Dashboard</h2>
 </x-slot>
 
-<div style="padding:20px">
+<div class="container mt-4">
 
-<a href="/pessoas">
-<button>👤 Gerenciar Pessoas</button>
+<div class="row">
+
+<div class="col-md-6">
+
+<div class="card shadow">
+<div class="card-body text-center">
+
+<h5 class="card-title">👤 Pessoas</h5>
+<p class="card-text">Gerenciar cadastro de pessoas</p>
+
+<a href="/pessoas" class="btn btn-primary">
+Acessar
 </a>
 
-<br><br>
+</div>
+</div>
 
-<a href="/produtos">
-<button>📦 Gerenciar Produtos</button>
+</div>
+
+<div class="col-md-6">
+
+<div class="card shadow">
+<div class="card-body text-center">
+
+<h5 class="card-title">📦 Produtos</h5>
+<p class="card-text">Gerenciar cadastro de produtos</p>
+
+<a href="/produtos" class="btn btn-success">
+Acessar
 </a>
+
+</div>
+</div>
+
+</div>
+
+</div>
 
 </div>
 
