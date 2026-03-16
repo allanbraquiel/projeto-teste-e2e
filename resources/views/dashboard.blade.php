@@ -19,18 +19,17 @@
 
     </div>
         <div class="col-md-6">
-    <div class="card shadow">
-    <div class="card-body text-center">
+            <div class="card shadow">
+                <div class="card-body text-center">
+                    <h5 class="card-title">📦 Produtos</h5>
+                        <p class="card-text">Gerenciar Cadastro de Produtos</p>
 
-    <h5 class="card-title">📦 Produtos</h5>
-        <p class="card-text">Gerenciar Cadastro de Produtos</p>
+                    <a href="/produtos" class="btn btn-success">Acessar</a>
 
-    <a href="/produtos" class="btn btn-success">Acessar</a>
+                </div>
+            </div>
 
-    </div>
-    </div>
-
-    </div>
+        </div>
 
     </div>
 
