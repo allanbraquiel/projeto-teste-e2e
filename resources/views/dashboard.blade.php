@@ -12,7 +12,6 @@
 
         <h5 class="card-title">👤 Pessoas</h5>
             <p class="card-text">Gerenciar Cadastro de Pessoas</p>
-
         <a href="/pessoas" class="btn btn-primary">Acessar</a>
 
     </div>
