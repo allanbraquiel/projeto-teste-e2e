@@ -14,11 +14,9 @@
     <div class="card-body text-center">
 
     <h5 class="card-title">👤 Pessoas</h5>
-    <p class="card-text">Gerenciar Cadastro de Pessoas</p>
+        <p class="card-text">Gerenciar Cadastro de Pessoas</p>
 
-    <a href="/pessoas" class="btn btn-primary">
-    Acessar
-    </a>
+    <a href="/pessoas" class="btn btn-primary">Acessar</a>
 
     </div>
     </div>
@@ -33,9 +31,7 @@
     <h5 class="card-title">📦 Produtos</h5>
         <p class="card-text">Gerenciar Cadastro de Produtos</p>
 
-    <a href="/produtos" class="btn btn-success">
-        Acessar
-    </a>
+    <a href="/produtos" class="btn btn-success">Acessar</a>
 
     </div>
     </div>
