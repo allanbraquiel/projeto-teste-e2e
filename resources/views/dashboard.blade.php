@@ -10,7 +10,7 @@
 
             <div class="col-md-6">
 
-    <div class="card shadow">
+        <div class="card shadow">
     <div class="card-body text-center">
 
     <h5 class="card-title">👤 Pessoas</h5>
