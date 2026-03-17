@@ -24,7 +24,6 @@
                             <p class="card-text">Gerenciar Cadastro de Produtos</p>
 
                         <a href="/produtos" class="btn btn-success">Acessar</a>
-
                     </div>
                 </div>
 
