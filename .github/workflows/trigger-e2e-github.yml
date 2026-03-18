@@ -1,23 +1,19 @@
-name: Trigger E2E Tests
+name: Trigger E2E GitHub
 
 on:
   push:
     branches:
       - master
-      - develop
+  workflow_dispatch:
 
 jobs:
-
-  trigger-e2e:
-
+  trigger-e2e-github:
     runs-on: ubuntu-latest
 
     steps:
-
-      - name: Disparar pipeline E2E
+      - name: Disparar pipeline E2E no GitHub
         run: |
-
-          curl -X POST \
+          curl --fail -X POST \
           -H "Accept: application/vnd.github+json" \
           -H "Authorization: Bearer ${{ secrets.E2E_REPO_TOKEN }}" \
           https://api.github.com/repos/allanbraquiel/testes-cypress-e2e/dispatches \
