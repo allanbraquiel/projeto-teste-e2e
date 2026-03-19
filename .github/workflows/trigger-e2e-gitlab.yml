@@ -15,5 +15,5 @@ jobs:
         run: |
           curl --fail --request POST \
           --form token="${{ secrets.E2E_TRIGGER_TOKEN }}" \
-          --form ref="master" \
+          --form ref="main" \
           "https://gitlab.com/api/v4/projects/${{ secrets.E2E_PROJECT_ID }}/trigger/pipeline"
