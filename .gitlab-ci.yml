@@ -10,5 +10,5 @@ trigger_e2e_tests:
     - >
       curl --fail --request POST
       --form token="$E2E_TRIGGER_TOKEN"
-      --form ref="master"
+      --form ref="main"
       "https://gitlab.com/api/v4/projects/$E2E_PROJECT_ID/trigger/pipeline"
