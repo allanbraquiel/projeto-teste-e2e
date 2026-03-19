@@ -1,0 +1,14 @@
+stages:
+  - trigger_e2e
+
+trigger_e2e_tests:
+  stage: trigger_e2e
+  image: curlimages/curl:8.7.1
+  rules:
+    - if: '$CI_COMMIT_BRANCH == "master"'
+  script:
+    - >
+      curl --fail --request POST
+      --form token="$E2E_TRIGGER_TOKEN"
+      --form ref="master"
+      "https://gitlab.com/api/v4/projects/$E2E_PROJECT_ID/trigger/pipeline"
