@@ -49,7 +49,7 @@ Nova Pessoa
 <div class="mt-3">
 
 <button type="submit" class="btn btn-success">
-    💾 Salvar
+    💾 Confirmar
 </button>
 
 <a href="/pessoas" class="btn btn-secondary">
