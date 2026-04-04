@@ -19,6 +19,16 @@
 /storage/*.key
 /storage/pail
 /vendor
+
+# Playwright artifacts
+/playwright-report/
+/test-results/
+/blob-report/
+
+# Allure artifacts
+/allure-results/
+/allure-report/
+
 Homestead.json
 Homestead.yaml
 Thumbs.db

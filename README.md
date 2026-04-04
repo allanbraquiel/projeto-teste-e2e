@@ -214,6 +214,81 @@ npm run allure:generate
 npm run allure:open
 ```
 
+### Testes E2E com Playwright (no mesmo repositório)
+
+Os testes Playwright foram adicionados em `tests/e2e` neste projeto Laravel.
+
+**1. Instalar dependências e navegador do Playwright:**
+
+```bash
+npm install
+npm run e2e:install
+```
+
+**2. Garantir banco pronto para teste:**
+
+```bash
+php artisan migrate:fresh --seed
+```
+
+Depois escolha um dos modos de execução:
+
+- **Modo A (recomendado para seu cenário atual):** app já rodando em `http://localhost`
+- **Modo B:** Playwright sobe automaticamente `php artisan serve` em `http://127.0.0.1:8000`
+
+O login padrão utilizado nos cenários é:
+
+- E-mail: `test@example.com`
+- Senha: `password`
+
+Se quiser usar outro usuário, sobrescreva variáveis de ambiente:
+
+```bash
+E2E_EMAIL=seu_email E2E_PASSWORD=sua_senha npm run e2e
+```
+
+Se a aplicação estiver em outra URL:
+
+```bash
+PLAYWRIGHT_BASE_URL=http://localhost:8080 npm run e2e
+```
+
+**3. Executar os cenários E2E:**
+
+```bash
+# Modo A: usa app já em execução (http://localhost)
+npm run e2e
+
+# Modo A com navegador visível
+npm run e2e:headed
+
+# Modo B: sobe php artisan serve automaticamente em 127.0.0.1:8000
+npm run e2e:local
+
+# Modo B com navegador visível
+npm run e2e:local:headed
+
+# modo interativo do Playwright
+npm run e2e:ui
+
+# abrir relatório HTML da última execução
+npm run e2e:report
+
+# gerar relatório Allure (executa testes e gera allure-report)
+npm run e2e:allure
+
+# abrir relatório Allure no navegador
+npm run e2e:allure:open
+```
+
+**Cenários iniciais criados:**
+
+- Login e redirecionamento de usuário não autenticado
+- Cadastro de Pessoa
+- Cadastro de Produto
+
+Os resultados brutos ficam em `allure-results` e o relatório gerado em `allure-report`.
+
 ---
 
 ## Estrutura do Projeto
